@@ -43,6 +43,11 @@ const { title } = Astro.props;
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-    gap: var(--space-lg);
+
+    /* hide wrapping rows */
+    grid-template-rows: min-content;
+    grid-auto-rows: 0;
+    gap: 0 var(--space-lg);
+    overflow: hidden;
   }
 </style>

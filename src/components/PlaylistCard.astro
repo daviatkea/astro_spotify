@@ -60,6 +60,13 @@ const { title, body, imgPath } = Astro.props;
     position: absolute;
   }
 
+  p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+
   figure {
     display: grid;
     grid: "stack";
